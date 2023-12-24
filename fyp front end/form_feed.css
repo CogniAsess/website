@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Rubic One";
+    src: url("fonts/Rubik One Regular 400.ttf") format("truetype");
+}
+
+/* Style the scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+}
+
+/* Style the scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background-color: #2B2B2B; /* Dark gray background of the track */
+    border-radius: 6px; /* Optional: adds rounded corners to the track */
+}
+
+/* Style the scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: #222222; /* Vibrant green color for the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+    border: 3px solid #2B2B2B; /* Dark gray border to separate thumb from track */
+}
+
+/* Style the scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #C0DC3F; /* Slightly lighter green when hovered */
+}
+
+/* Firefox scrollbar styles */
+html {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #D7EF43 #2B2B2B; /* thumb and track color */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubic One";
+    background-color: #1E1E1E;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.logo-cogni {
+    color: #d7ef43; /* Green color */
+}
+
+.logo-assess {
+    color: white; /* White color */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+.navbar-logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px; /* Optional: if you want rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.nav-lnk {
+    color: #fff; /* Green text color on hover for links */
+}
+
+/* Hover effect for individual links */
+.nav-lnk:hover {
+    color: #d7ef43; /* Green text color on hover for links */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #d7ef43; /* Initial green background */
+    font-weight: bold;
+    color: black; /* Initial black text color */
+    border: none; /* No border */
+    padding: 5px 20px; /* Padding inside the button */
+    margin-left: 10px; /* Spacing between the links */
+    cursor: pointer; /* Indicates the link is clickable */
+    text-decoration: none; /* Removes underline from the text */
+    font-family: "Work Sans", sans-serif; /* Font family */
+    border: 2px solid #ffff00;
+    border-radius: 15px;
+}
+
+.nav-btn:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+
+
+/********** Sidebar *************/
+
+
+/* Grid Container */
+.content-container {
+    display: grid;
+    grid-template-columns: 260px auto; /* Adjust the width of the sidenav if needed */
+    height: calc(100vh - 130px); /* Adjust for any headers/footers */
+    margin-top: 55px;
+}
+
+/* Side Navigation Styles */
+.sidenav {
+    background-color: #222222;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 24px;
+    
+}
+
+.sidenav form {
+    text-align: center;
+}
+
+.sidenav select {
+    width: 80%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3B3B3B;
+    color: #fff;
+}
+
+.links {
+    margin-top: 170%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav a {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Main Content Styles */
+.main {
+    background-color: #2B2B2B;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 1px 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    overflow-y: auto; /* Enable vertical scrolling for overflow */
+    max-height: calc(100vh - 130px); /* Adjust height to prevent overflow */
+
+}
+
+.main .text {
+    text-align: justify;
+    margin: 2% 2%;
+    font-size: 18px;
+}
+
+.u-text {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;        /* enables flexbox layout */
+    justify-content: start; /* aligns children (including img) to the start of the container */
+    align-items: center;  /* centers children vertically */
+}
+
+
+ .a-text {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;        /* enables flexbox layout */
+    justify-content: start; /* aligns children (including img) to the start of the container */
+}
+
+
+.u-text {
+    background-color: #222222;
+    color: #D7EF43;
+}
+
+.u-text img, .a-text img {
+    margin-right: 10px;
+}
+
+
+.a-text {
+    margin-bottom: 100px;
+    border-bottom: 2px solid rgba(32, 33, 35, 0.50);
+    color: #fff;
+}
+
+.box {
+    position: absolute; /* Changed from fixed to absolute */
+    
+    bottom: 10px; /* Adjust as necessary to fit within your main container */
+    left: 54%; /* Centers the box horizontally */
+    transform: translateX(-50%); /* Adjusts for the width of the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%; /* You might want to set a max-width if the box is too wide */
+    z-index: 2;
+    padding-bottom: 4%; /* Adjusts padding to ensure it's within the main container */
+}
+
+
+.box textarea {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    width: 74%;
+    min-height: 60px; /* Allows the textarea to expand as text is added */
+    padding: 5px;
+    margin-left: 130px; /* Adjust if necessary to align within your design */
+    margin-bottom: 50px; /* Adjust if necessary for spacing */
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(32, 33, 35, 0.50);
+    background: #3B3B3B;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    resize: none; /* Allows the user to resize the textarea vertically */
+    overflow: auto; /* Adds a scrollbar when the content exceeds the textarea's height */
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/********** Footer **********/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+    position: fixed;
+    bottom: 0;
+    z-index: 10; /* Ensure it stays above other elements */
+
+}
+#footer-brand img {
+    margin-right: 10px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+#footer-brand {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+#footer-links,
+#footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link,
+.social-link {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-link:hover,
+.social-link:hover {
+    color: #d7ef43;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

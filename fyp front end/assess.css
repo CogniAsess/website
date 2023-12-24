@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar a {
+    color: #d7ef43;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #D7EF43
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px;
+    /* Optional: if you want rounded corners */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #D7EF43;
+    /* Green background */
+    color: black;
+    /* Text color */
+    font-weight: bold;
+    border: none;
+    /* No border */
+    padding: 5px 20px;
+    /* Padding inside the button */
+    margin-left: 10px;
+    /* Spacing between the links */
+    cursor: pointer;
+    /* Indicates the link is clickable */
+    text-decoration: none;
+    /* Removes underline from the text */
+    transition: background-color 0.3s;
+    /* Smooth background color transition for hover */
+}
+
+/* Hover effect for buttons */
+.nav-btn:hover {
+    background-color: #c5e16c;
+    /* Lighter green on hover */
+}
+
+
+/********** table **********/
+
+.table {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+
+.table td {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+
+    width: 100px;
+    text-align: center;
+}
+
+/********** Footer **********/
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+}
+
+.footer a{
+    color: #d7ef43;
+    text-decoration: none;
+
+}
+
+#footer-brand {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+#footer-brand {
+    flex-grow: 1;
+    color: #D7EF43
+}
+
+#footer-links {
+    flex-grow: 3;
+}
+
+#footer-socials {
+    flex-grow: 2;
+}
+
+.footer-link,
+.social-link {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#faq-link {
+    margin-left: 20px;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.footer-section img {
+    margin-right: 10px;
+    width: auto;
+}
