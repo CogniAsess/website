@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CogniAssess- Home Page</title>
+    <link rel="stylesheet" href="domain.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img
+          src="./login_register_pics/logo.png"
+          alt="Logo"
+          width="30"
+          height="30"
+        />
+        <span class="logo-cogni">COGNI</span>
+        <span class="logo-assess">ASSESS</span>
+      </div>
+      <div class="navbar-links">
+        <a href="#" class="nav-lnk">About Us</a>
+        <a href="#" class="nav-lnk">Support</a>
+        <a href="login.html" class="nav-btn">Login</a>
+      </div>
+    </div>
+    <main>
+      <section class="domain">
+        <div class="d-text">
+          <h1>Browse Domains</h1>
+          <p>
+            Choose 3 domains that align with your requirement to generate
+            personalized assessments based on your CV and selected role.
+          </p>
+        </div>
+        <!-- Add search box -->
+        <div class="search">
+          <input
+            type="text"
+            id="domainSearch"
+            oninput="searchDomains()"
+            placeholder="Search domain"
+          />
+        </div>
+      </section>
+      <section class="roles">
+        <div class="r-text" id="dom">
+          <h3>Domains</h3>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">
+            <img src="./domain_pics/domain_1.png" alt="" />
+          </div>
+          <div class="role-title">Communication Skills</div>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">
+            <img src="./domain_pics/domain_2.png" alt="" />
+          </div>
+          <div class="role-title">Techical Proficiency</div>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">
+            <img src="./domain_pics/domain_3.png" alt="" />
+          </div>
+          <div class="role-title">Problem Solving</div>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">
+            <img src="./domain_pics/domain_4.png" alt="" />
+          </div>
+          <div class="role-title">Decision Making</div>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">
+            <img src="./domain_pics/domain_5.png" alt="" />
+          </div>
+          <div class="role-title">Customer Management</div>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">
+            <img src="./domain_pics/domain_6.png" alt="" />
+          </div>
+          <div class="role-title">Writing Expert</div>
+        </div>
+
+        <div>
+          <a href="/login.html" class="r-link">Start</a>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="footer">
+        <div class="footer-section" id="footer-brand">
+          <img
+            src="./login_register_pics/logo.png"
+            width="30"
+            height="30"
+            alt="Logo"
+          />
+          <span class="logo-cogni">COGNI</span>
+          <span class="logo-assess">ASSESS</span>
+        </div>
+        <div class="footer-section" id="footer-links">
+          <a href="#" class="footer-link">Marketplace</a>
+          <a href="#" class="footer-link">Explore</a>
+          <a href="#" class="footer-link">Rankings</a>
+          <a href="#" class="footer-link">Support</a>
+          <a href="#" class="footer-link" id="faq-link">FAQ</a>
+        </div>
+        <div class="footer-section" id="footer-socials">
+          <a href="#" class="social-link">
+            <img src="footer_icons/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="footer_icons/instagram.png" alt="Instagram" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="footer_icons/twitter.png" alt="Twitter" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="footer_icons/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Add JavaScript for search functionality -->
+    <script>
+      function searchDomains() {
+        var input, filter, cards, card, title, i;
+        input = document.getElementById("domainSearch");
+        filter = input.value.toUpperCase();
+        cards = document.getElementsByClassName("role-card");
+        for (i = 0; i < cards.length; i++) {
+          card = cards[i];
+          title = card.querySelector(".role-title");
+          if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

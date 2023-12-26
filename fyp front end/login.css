@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Rubic One";
+    src: url("fonts/Rubik One Regular 400.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubic One";
+    font-weight: normal;
+    background-color: #2b2b2b;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.logo-cogni {
+    color: #d7ef43; /* Green color */
+}
+
+.logo-assess {
+    color: white; /* White color */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px; /* Optional: if you want rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.nav-lnk {
+    color: #fff; /* Green text color on hover for links */
+}
+
+/* Hover effect for individual links */
+.nav-lnk:hover {
+    color: #d7ef43; /* Green text color on hover for links */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #d7ef43; /* Initial green background */
+    font-weight: bold;
+    color: black; /* Initial black text color */
+    border: none; /* No border */
+    padding: 5px 20px; /* Padding inside the button */
+    margin-left: 10px; /* Spacing between the links */
+    cursor: pointer; /* Indicates the link is clickable */
+    text-decoration: none; /* Removes underline from the text */
+    font-family: "Work Sans", sans-serif; /* Font family */
+    border: 2px solid #ffff00;
+    border-radius: 15px;
+}
+
+.nav-btn:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+/* ----------------------------------------------- */
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #2b2b2b; /* Or any color you want */
+    padding: 80px;
+}
+
+.container {
+    width: 100%;
+    max-width: auto;
+    background: #2b2b2b; /* Or any color you want */
+    margin-right: 200px;
+    border-radius: 15px;
+    color: white;
+    text-align: left;
+}
+
+.login-image img {
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    max-width: 50%; /* Adjust the percentage as needed */
+    height: auto; /* This will maintain the aspect ratio */
+}
+
+.container h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.social-login button {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    width: 60%;
+    padding: 10px;
+    text-align: left;
+    background-color: #d7ef43; /* Google's brand color */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #ffff00;
+    border-radius: 5px;
+}
+
+.social-login button:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+}
+#footer-brand img {
+    margin-right: 10px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+#footer-brand {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+#footer-links,
+#footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link,
+.social-link {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-link:hover,
+.social-link:hover {
+    color: #d7ef43;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

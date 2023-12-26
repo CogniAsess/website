@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #2B2B2B;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 80px;
+  }
+  
+  .login-image img {
+    max-width: 30%;
+    height: auto;
+    display: block; /* This ensures no extra space at the bottom of the image */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-left: 50px; /* Adjust the spacing between the image and the form */
+  }
+  
+  h2 {
+    color: #D7EF43;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 40px;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    background-color: #D7EF43;
+    margin-bottom: 15px;
+  }
+  
+  button.google-sign-in {
+    background-color: #4285F4; /* Google brand color */
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-image img {
+      max-width: 60%;
+      margin-bottom: 30px; /* Add some space between the image and the form on smaller screens */
+    }
+  
+    .container {
+      margin-left: 0; /* Remove the margin between the image and the form on smaller screens */
+    }
+  }
+  

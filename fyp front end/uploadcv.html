@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CogniAssess- Upload CV</title>
+    <link rel="stylesheet" href="uploadcv.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+          <img src="./login_register_pics/logo.png" alt="Logo" width="30" height="30" />
+          <span class="logo-cogni">COGNI</span>
+          <span class="logo-assess">ASSESS</span>
+      </div>
+      <div class="navbar-links">
+          <a href="#" class="nav-lnk">About Us</a>
+          <a href="#" class="nav-lnk">Support</a>
+          <a href="login.html" class="nav-btn">Login</a>
+      </div>
+  </div>
+    <main>
+
+
+
+      <!-- Upload CV Section -->
+
+      <section class="upload">
+        <div class="cv">
+          <h1>Upload <span>CV</span></h1>
+          <div class="upload-btn-wrapper">
+            <div class="upload-img"><img src="./fileuploadpics/fileupload.png"></div>
+
+            <input
+            type="file"
+            id="cvFile"
+            accept=".pdf, .doc, .docx, .txt"
+            onchange="displayFileName();"
+          />
+          <label for="cvFile">Click to upload</label>
+          <!-- Element to display file name -->
+          <div id="fileName" style="margin-top: 10px;font-weight:300px">No file chosen</div>
+            <div class="file-types">
+              <span class="file-type">PDF</span>
+              <span class="file-type">DOC</span>
+              <span class="file-type">DOCX</span>
+              <span class="file-type">TXT </span>
+              <span >>10mb </span>
+
+            </div>
+          </div>
+          <div >
+            <button onclick="startCVAnalysis()" class="start-analysis-btn">Start CV Analysis</button>
+        </div>
+        </div>
+        
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="footer">
+        <div class="footer-section" id="footer-brand">
+            <img src="./login_register_pics/logo.png" width="30" height="30" alt="Logo" />
+            <span class="logo-cogni">COGNI</span>
+            <span class="logo-assess">ASSESS</span>
+        </div>
+        <div class="footer-section" id="footer-links">
+            <a href="#" class="footer-link">Marketplace</a>
+            <a href="#" class="footer-link">Explore</a>
+            <a href="#" class="footer-link">Rankings</a>
+            <a href="#" class="footer-link">Support</a>
+            <a href="#" class="footer-link" id="faq-link">FAQ</a>
+        </div>
+        <div class="footer-section" id="footer-socials">
+            <a href="#" class="social-link">
+                <img src="footer_icons/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" class="social-link">
+                <img src="footer_icons/instagram.png" alt="Instagram" />
+            </a>
+            <a href="#" class="social-link">
+                <img src="footer_icons/twitter.png" alt="Twitter" />
+            </a>
+            <a href="#" class="social-link">
+                <img src="footer_icons/linkedin.png" alt="LinkedIn" />
+            </a>
+        </div>
+    </section>
+
+    </main>
+    <script>
+      function displayFileName() {
+        var input = document.getElementById("cvFile");
+        var fileNameDisplay = document.getElementById("fileName");
+
+        if (input.files[0]) {
+          var confirmUpload = confirm("Do you want to upload " + input.files[0].name + "?");
+          if (confirmUpload) {
+            fileNameDisplay.textContent = input.files[0].name;
+          } else {
+            input.value = ""; // Reset file input
+            fileNameDisplay.textContent = "No file chosen";
+          }
+        } else {
+          fileNameDisplay.textContent = "No file chosen";
+        }
+      }
+    </script>
+
+  </body>
+</html>

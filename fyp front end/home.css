@@ -1,0 +1,657 @@
+@font-face {
+    font-family: "Rubic One";
+    src: url("fonts/Rubik One Regular 400.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubic One";
+    font-weight: normal;
+    background-color: #2b2b2b;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+.logo-cogni {
+    color: #d7ef43; /* Green color */
+}
+
+.logo-assess {
+    color: white; /* White color */
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-logo img span {
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px; /* Optional: if you want rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.nav-lnk {
+    color: #fff; /* Green text color on hover for links */
+}
+
+/* Hover effect for individual links */
+.nav-lnk:hover {
+    color: #d7ef43; /* Green text color on hover for links */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #d7ef43; /* Initial green background */
+    font-weight: bold;
+    color: black; /* Initial black text color */
+    border: none; /* No border */
+    padding: 5px 20px; /* Padding inside the button */
+    margin-left: 10px; /* Spacing between the links */
+    cursor: pointer; /* Indicates the link is clickable */
+    text-decoration: none; /* Removes underline from the text */
+    font-family: "Work Sans", sans-serif; /* Font family */
+    border: 2px solid #ffff00;
+    border-radius: 15px;
+}
+
+/* Hover effect for buttons */
+.nav-btn:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+/* hero and image section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #2b2b2b;
+}
+
+.hero-content {
+    max-width: 50%;
+    order: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.hero-image {
+    max-width: 50%;
+    /* Adjust the width as needed */
+    order: 2;
+    /* The image will be placed after the content by default */
+    margin-right: 20px;
+    text-align: center;
+    /* Center the text below the image */
+}
+
+.image-frame {
+    border: 2px solid #3b3b3b;
+    border-radius: 20px;
+    display: inline-block;
+    /* Aligns the frame as needed */
+}
+
+.hero-image img {
+    width: 100%;
+    /* image responsive */
+    height: auto;
+    border-bottom: none;
+    /* Removes the bottom border if there was one */
+    border-radius: 20px 20px 0 0;
+    /* Rounds only the top corners */
+    margin-bottom: 0;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    cursor: pointer;
+    /* Removes any margin below the image */
+}
+.hero-image img:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+.image-caption {
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #2b2b2b;
+    border-radius: 0 0 20px 20px;
+    text-align: left;
+    padding: 20px;
+    margin-top: -9px;
+    /* Aligns the caption closely with the image */
+}
+
+/* hero content section */
+
+.hero-content h1 {
+    font-size: 70px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #d7ef43;
+}
+
+.hero-content h2 {
+    font-weight: 250;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+
+    font-size: 22px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.hero button {
+    background-color: #d7ef43;
+    font-weight: bold;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    border: 2px solid #ffff00;
+    border-radius: 15px;
+}
+
+/* Hover effect for buttons */
+.hero button:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+/* hero section - information  style */
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    /*  space between the button and the info section */
+}
+
+.info div {
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.info p {
+    color: #aaaaaa;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+        order: unset;
+    }
+
+    .hero-image img {
+        width: auto;
+        /* Adjust image size on smaller screens */
+        margin: 0 auto;
+        /* Center the image */
+    }
+}
+
+/******* ROLES section  *******/
+
+.roles {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 60px;
+}
+
+.role-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.roles h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.roles p {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.role-card {
+    background: #3b3b3b;
+    border-radius: 15px;
+    color: #ffffff;
+    flex: 0 0 30%; /* Adjust flex basis to control width */
+    margin: 13px;
+    padding: 20px;
+    min-height: 400px; /* Keeps minimum height */
+    box-sizing: border-box;
+    vertical-align: top;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    cursor: pointer;
+}
+
+.role-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+.role-card:hover .role-title {
+    color: #d7ef43; /* Change color to green when hovering over the card */
+}
+.r-text {
+    text-align: left;
+    margin-bottom: 48px;
+    width: 83%;
+}
+
+.role-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* If icons are circular */
+}
+
+.role-title {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.role-description {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%; /* Ensure it is responsive */
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .role-card {
+        max-width: calc(50% - 26px);
+    }
+}
+
+@media (max-width: 480px) {
+    .role-card {
+        max-width: 100%;
+    }
+}
+
+/******** Proctoring **********/
+
+.proctoring {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 40px;
+}
+
+.proctoring h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #d7ef43;
+    text-align: left;
+}
+.proctoring h1 span {
+    color: #fff;
+}
+
+.proctoring p {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.proctor-card {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600px;
+
+    border-radius: 15px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 13px;
+    padding: 20px;
+    width: 24%;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    cursor: pointer;
+}
+.proctor-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+.p-text {
+    text-align: center;
+    margin: 48px;
+    width: 83%;
+}
+
+.proctor-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.proctor-title {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+/******** Top Streaks *******/
+.streaks {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 60px;
+}
+
+.streaks h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.streaks p {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.streak-card {
+    background: #3b3b3b;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    font-weight: bold;
+    border-radius: 15px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 13px;
+    padding: 20px;
+    width: 16%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    cursor: pointer;
+}
+.streak-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+.s-text {
+    text-align: left;
+    margin: 37px;
+}
+
+.streaks-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+.streaks-title {
+    font-weight: 600;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+.streak-description {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.4;
+    margin-top: 10px;
+    width: 100%;
+    color: #858584;
+    max-width: 600px;
+}
+
+.join-us {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: inline-block; /* Aligns like a button */
+    background-color: #d7ef43;
+    color: black;
+    border: 2px solid #ffff00; /* Solid border */
+    padding: 15px 35px; /* Padding for size */
+    font-size: 18px; /* Font size */
+    margin: 40px 20px; /* Margin for spacing */
+    cursor: pointer; /* Cursor changes to pointer */
+    border-radius: 15px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.join-us:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #ffff00; /* Text color change on hover */
+}
+
+/********** update **********/
+
+.update-section {
+    background: #3b3b3b;
+    letter-spacing: 1px; /* Increased letter spacing */
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 190px;
+    margin-right: 180px;
+    margin-bottom: 100px;
+}
+
+.update-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.update-content {
+    max-width: 360px;
+    margin-left: 30px;
+}
+
+.update-content h1 {
+    color: #d7ef43;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.update-content p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscription-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffff00;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #d7ef43;
+    color: black;
+    border: 2px solid #ffff00;
+    border-radius: 15px;
+}
+
+.subscription-form button:hover {
+    background-color: #2b2b2b;
+    color: #ffff00;
+}
+
+@media (max-width: 768px) {
+    .update-section {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .update-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .update-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .update-content h1 {
+        font-size: 30px;
+    }
+
+    .update-content p {
+        font-size: 14px;
+    }
+
+    .subscription-form input,
+    .subscription-form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/********** Footer **********/
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+}
+#footer-brand img {
+    margin-right: 10px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+#footer-brand {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+#footer-links,
+#footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link,
+.social-link {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-link:hover,
+.social-link:hover {
+    color: #d7ef43;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

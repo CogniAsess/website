@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Rubic One";
+    src: url("fonts/Rubik One Regular 400.ttf") format("truetype");
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubic One";
+    background-color: #2b2b2b;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.logo-cogni {
+    color: #d7ef43; /* Green color */
+}
+
+.logo-assess {
+    color: white; /* White color */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px; /* Increased letter spacing */
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px; /* Optional: if you want rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.nav-lnk {
+    color: #fff; /* Green text color on hover for links */
+}
+
+/* Hover effect for individual links */
+.nav-lnk:hover {
+    color: #d7ef43; /* Green text color on hover for links */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #d7ef43; /* Initial green background */
+    font-weight: bold;
+    color: black; /* Initial black text color */
+    border: none; /* No border */
+    padding: 5px 20px; /* Padding inside the button */
+    margin-left: 10px; /* Spacing between the links */
+    cursor: pointer; /* Indicates the link is clickable */
+    text-decoration: none; /* Removes underline from the text */
+    font-family: "Work Sans", sans-serif; /* Font family */
+    border: 2px solid #ffff00;
+    border-radius: 15px;
+}
+
+.nav-btn:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+
+/********** upload-cv-section *********/
+.file-types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px; /* Adjusts space above the file types text */
+    color: #d7ef43; /* Bright lime-like color */
+    font-weight: 400; /* Makes the font bold */
+    text-align: center; /* Centers the text */
+}
+
+.file-type {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: rgba(50, 118, 232, 0.10);
+    /* Semi-transparent blue background */
+}
+
+/* Additional CSS for other elements */
+.upload {
+    background-color: #1e1e1e;
+    padding-top: 200px;
+    padding-bottom: 2px;
+}
+
+.upload h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #d7ef43;
+    text-align: center;
+}
+
+.upload-img{
+    flex-shrink: 0;
+    display: flex;
+    width: 108.411px;
+    height: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upload label {
+    font-family: "Work Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.upload h1 span {
+    color: #fff;
+}
+
+.cv {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 250px;
+    width: 83%;
+}
+#fileName {
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px; /* Increased letter spacing */
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Additional styles for navbar buttons */
+.start-analysis-btn {
+    background-color: #d7ef43; /* Initial green background */
+    font-weight: bold;
+    color: black; /* Initial black text color */
+    border: none; /* No border */
+    padding: 8px 40px; /* Padding inside the button */
+    margin-top: 20px; /* Spacing between the links */
+    cursor: pointer; /* Indicates the link is clickable */
+    text-decoration: none; /* Removes underline from the text */
+    font-family: "Work Sans", sans-serif; /* Font family */
+    border: 2px solid #ffff00;
+    border-radius: 5px;
+}
+
+.start-analysis-btn:hover {
+    background-color: #2b2b2b; /* Dark background on hover */
+    color: #d7ef43; /* Green text color on hover */
+}
+
+
+.upload-btn-wrapper {
+    background-color: #2B2B2B;
+    padding: 20px;
+    align-items: center;
+    margin: 20px auto;
+    padding: 80px 132px;
+    border-radius: 10px;
+    color: #d7ef43;
+    font-weight: bold;
+    width: 300px;
+    height: 150px;
+}
+
+.upload-btn-wrapper:hover {
+    background-color: #555;
+}
+
+.upload-btn-wrapper input[type="file"] {
+    display: none;
+}
+
+
+/********** Footer **********/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+}
+#footer-brand img {
+    margin-right: 10px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+#footer-brand {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #d7ef43;
+}
+
+#footer-links,
+#footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link,
+.social-link {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-link:hover,
+.social-link:hover {
+    color: #d7ef43;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
