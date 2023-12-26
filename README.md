@@ -1,1 +1,1 @@
-## Working on FYP Frontend ( login, register, homepage, domain selection, )
+## Working on FYP Frontend ( last page: personality )
